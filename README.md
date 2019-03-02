@@ -1,1 +1,2 @@
-# HooHacks19_Ohana
+# project0
+CS50W Project0
