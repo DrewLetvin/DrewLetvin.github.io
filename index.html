@@ -1,87 +1,76 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
 
-<head>
+<html lang="en">
+  <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <title>Anti Vax: The Truth</title>
-</head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="LBU_Home.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="BearLogo.png">
 
-<body>
-    <!-- Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Anti Vax</a>
+    <title>Lake Braddock Ultimate</title>
+  </head>
+  <body>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="list.html">List</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="vote.html">Vote</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <!-- Top of page background image and social media -->
+    <div class="homepage">
 
-    <!-- Jumbotron-->
-    <div class="jumbotron">
-        <div class="row">
-            <div class="col-lg-7">
-                <h1 class="display-4"> Hoo Hacks</h1>
-                <p class="lead">Virginia's #1 Source for Anti Vax News</p>
-                <a class="btn btn-primary btn-lg" href="list.html" role="button"> View </a>
+      <!-- Top bar with navigation buttons -->
+      <div id="navbar">
+        <a class="active" href="index.html#top">Home</a>
+        <a href="photos.html">Photos</a>
+        <a href="#contact">Contact</a>
+        <a href="#about" style="float: right;">About</a>
+      </div>
 
-        </div>
+      <script>
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+      </script>
+
+      <img src="BearLogo.png" alt="LBU Logo" style="height:8vh; position:fixed; right:1vh; bottom:1vh;">
+
+      <a href="https://www.facebook.com/groups/2233126056933386/" target="_blank"><img src="facebook.png" class="fa"></a>
+      <a href="https://www.youtube.com/channel/UCeHp2AUnkyT5XzEdIbOZiTA" target="_blank"><img src="youtube.png" class="u"></a>
+      <a href="https://www.reddit.com/r/ultimate/" target="_blank"><img src="reddit.png" class="red"></a>
+      <a href="https://www.instagram.com/explore/tags/fairfaxultimate/?hl=en" target="_blank"><img src="instagram.png" class="insta"></a>
+      <a href="https://open.spotify.com/user/22m5bd2hem5ofrdrlcbihdzza/playlist/0rzY11JtlTL4k8omGIThXW?si=QqlNHjrBRyKbm-WkB4SdKA" target="_blank"><img src="spotify.png" class="spot"></a>
+
+      <div id="readMore">
+        <a href="#about"><img src="ReadMore.png" class="chevron"></a>
+      </div>
+
     </div>
-        <!-- Cards -->
-        <div class="container">
-            <div class="row">
-                <div class="col-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">The List</h5>
-                            <p class="card-text">Check out our top 10 birds of the week</p>
-                            <a href="list.html" class="btn btn-primary">View</a>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Vote!</h5>
-                            <p class="card-text">Vote for next weeks top 10 birds!</p>
-                            <a href="vote.html" class="btn btn-primary">Vote</a>
-                        </div>
-                    </div>
-                </div>
+    <div class="content0" id="about">
 
+    </div>
 
+    <div class="content1" id="contact">
 
+    </div>
 
-              
+    <!-- <div class="homepage"></div> Optional Parallax Structure-->
 
-            <!-- Optional JavaScript -->
-            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-                crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-                crossorigin="anonymous"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-                crossorigin="anonymous"></script>
-</body>
-
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
 </html>
