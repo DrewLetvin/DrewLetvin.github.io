@@ -31,37 +31,23 @@
       <div  id="mapDossier"></div>
 
       <script type="text/javascript">
-
       var mapDossier;
-
       function load() {
-
         var container = document.getElementById("mapDossier"),
-
           url = "https://env-132697.customer.cloud.microstrategy.com/MicroStrategyLibrary/app/B7CA92F04B9FAE8D941C3E9B7E0CD754/F44E13C04634D072A7F37FA5F6302BAA/K53--K46";
-
         microstrategy.dossier.create({
-
           url: url,
-
           enableResponsive: true,
-
           placeholder: container,
-
-          containerHeight: '800 px'
-
+          containerHeight: '800px'
         })
-
       };
-
     </script>
 
       <script>
         window.onscroll = function() {myFunction()};
-
         var navbar = document.getElementById("navbar");
         var sticky = navbar.offsetTop;
-
         function myFunction() {
           if (window.pageYOffset >= sticky) {
             navbar.classList.add("sticky")
