@@ -22,6 +22,13 @@ h2 {
   background-attachment: fixed;
 }
 
+#mapDossier {
+  height: 450px;
+  width: 800px;
+  top: 50px;
+  left: 25px;
+}
+
 .content0 {
   height: 70vh;
   background-color: #3C0061;
@@ -38,6 +45,9 @@ h2 {
 #navbar {
   overflow: hidden;
   background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 #navbar a {
@@ -56,10 +66,4 @@ h2 {
   color: black;
   text-decoration: none;
   outline: none;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
 }
