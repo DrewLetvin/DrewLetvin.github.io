@@ -20,6 +20,14 @@ p {
   font-style: italic;
 }
 
+h4 {
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+  text-align: center;
+  font-style: italic;
+}
+
 h3 {
   color: black;
   text-decoration: none;
@@ -53,6 +61,7 @@ h3 {
 
 .content0 {
   height: 10vh;
+  padding-top: 10px;
   background-color: #9ebcd8;
   font-size: 36px;
 }
