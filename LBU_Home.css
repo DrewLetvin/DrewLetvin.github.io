@@ -41,13 +41,19 @@ p {
   font-size: 36px;
 }
 
+.lite {
+  background-color: #0DFF90;
+  height: 10px;
+  width: 100%;
+}
+
 .content1 {
   position: absolute;
   top: 75px;
   right: 50px;
   width: 300px;
   height: 450px;
-  background-color: #E8D87D;
+  background-color: #dbdbc7;
   font-size: 18px;
   padding-top: 50px;
   padding-left: 15px;
