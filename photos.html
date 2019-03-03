@@ -10,66 +10,61 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <!-- Custom Style Sheet -->
     <link rel="stylesheet" href="LBU_Home.css">
-    <!-- favicon -->
-    <link rel="shortcut icon" type="image/png" href="BearLogo.png">
 
-    <title>Lake Braddock Ultimate</title>
+    <title>GeoTweets</title>
+
+    <script type="text/javascript" src="https://env-132697.customer.cloud.microstrategy.com/MicroStrategyLibrary/javascript/embeddinglib.js"></script>
+
   </head>
-  <body>
+  <body onload="load()">
 
-  <div>
-    <!-- Top bar with navigation buttons -->
-    <div id="navbar">
-      <a class="active" href="index.html#top">Home</a>
-      <a href="photos.html">Photos</a>
-      <a href="index.html#contact">Contact</a>
-      <a href="index.html#about" style="float: right;">About</a>
-    </div>
+    <!-- Top of page background image and social media -->
+    <div class="homepage">
 
-    <h2>Under Construction</h2>
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="https://lh3.googleusercontent.com/i2faElBV28yu3NTGsDtWKlfsQpRMw6K-C4lEwZVDTKxDFjJhKENQ8uqA_wCJiPRcb9tEOjq2nB6Hj6kVd-o11T13cNeJFYGK5BVS2b0tgebebExwH7nM1QpTzorSUAFrxtDgNM8D=w1920-h1080" alt="First slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="https://lh3.googleusercontent.com/x17SP9apHJkpa66s3IghIIHi7tLSGC6x4cn9mMWv3eSa4Py0XXkHUDXApRpnisott_b9i5AvBYw6YKvsAep6zNbhndZBKHLqnIcpal2eov_6aAu0gDQNljzjBdRK35myFXm_Yo03=w1920-h1080" alt="Second slide">
-        </div>
+      <!-- Top bar with navigation buttons -->
+      <div id="navbar">
+        <a class="active" href="index.html#top">Home</a>
+        <a href="index.html" style="float: right;">Political</a>
+        <a href="photos.html" style="float: right;">Financial</a>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
 
-    <script>
-      window.onscroll = function() {myFunction()};
+      <div class="content1" id="contact">
 
-      var navbar = document.getElementById("navbar");
-      var sticky = navbar.offsetTop;
+        <h3>Welcome to  GeoTweets</h3>
 
-      function myFunction() {
-        if (window.pageYOffset >= sticky) {
-          navbar.classList.add("sticky")
-        } else {
-          navbar.classList.remove("sticky");
-        }
-      }
+        <p>The interactive mapview on the left displays the locations from which
+          tweets with a given key- word originated. Use the layer drop-down menu
+        to change the keyword search query.</p>
+      </div>
+
+      <div  id="mapDossier"></div>
+
+      <script type="text/javascript">
+      var mapDossier;
+      function load() {
+        var container = document.getElementById("mapDossier"),
+          url = "https://env-132697.customer.cloud.microstrategy.com/MicroStrategyLibrary/app/B7CA92F04B9FAE8D941C3E9B7E0CD754/5523A13A4971F656A89EAA8ADF737F92/K53--K46";
+        microstrategy.dossier.create({
+          url: url,
+          enableResponsive: true,
+          placeholder: container,
+          containerHeight: '450px'
+        })
+      };
     </script>
 
-  </div>
+    </div>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-</body>
+    <div class="lite"></div>
+
+    <div class="content0" id="about"></div>
+
+    <!-- <div class="homepage"></div> Optional Parallax Structure-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
 </html>
