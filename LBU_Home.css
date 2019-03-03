@@ -14,7 +14,7 @@ h2 {
 
 /* Homepage Background */
 .homepage {
-  background-image: url("2018HenricoHuddle(16-9).png");
+  background-color: black;
   height: 100vh;
   background-position:center;
   background-repeat:no-repeat;
@@ -34,22 +34,10 @@ h2 {
   font-size: 36px;
 }
 
-#readMore {
-  position: absolute;
-  width: 100%;
-  top: 94%;
-  text-align:center;
-}
-
-.chevron {
-  margin: auto;
-  width: 4%;
-}
-
 /* Navigation Bar */
 #navbar {
   overflow: hidden;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: white;
 }
 
 #navbar a {
@@ -59,7 +47,7 @@ h2 {
   text-align: center;
   padding: 2vh 5vh;
   text-decoration: none;
-  font-size: 115%;
+  font-size: 90%;
   font-weight: bold;
 }
 
@@ -74,77 +62,4 @@ h2 {
   position: fixed;
   top: 0;
   width: 100%;
-}
-
-/* Photo Album */
-#carouselExampleIndicators {
-  top: 7vh;
-  width: 75%;
-  margin:auto;
-}
-
-/* Social Media Icons */
-.fa {
-  padding: 1.5vh;
-  width: 7vh;
-  height: auto;
-  margin: 0vh 1vh;
-  position: fixed;
-  top:32vh;
-}
-
-.fa:hover {
-    opacity: 0.6;
-}
-
-.u {
-  padding: 1.5vh;
-  width: 7vh;
-  height: auto;
-  margin: 0vh 1vh;
-  position: fixed;
-  top:37vh;
-}
-
-.u:hover {
-  opacity: 0.6;
-}
-
-.red {
-  padding: 1.5vh;
-  width: 7vh;
-  height: auto;
-  margin: 0vh 1vh;
-  position: fixed;
-  top:42vh;
-}
-
-.red:hover {
-  opacity: 0.6;
-}
-
-.insta {
-  padding: 1.5vh;
-  width: 7vh;
-  height: auto;
-  margin: 0vh 1vh;
-  position: fixed;
-  top:47vh;
-}
-
-.insta:hover {
-  opacity: 0.6;
-}
-
-.spot {
-  padding: 1.5vh;
-  width: 7vh;
-  height: auto;
-  margin: 0vh 1vh;
-  position: fixed;
-  top:52vh;
-}
-
-.spot:hover {
-  opacity: 0.6;
 }

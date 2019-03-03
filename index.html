@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <!-- Custom Style Sheet -->
     <link rel="stylesheet" href="LBU_Home.css">
-    <!-- favicon -->
-    <link rel="shortcut icon" type="image/png" href="BearLogo.png">
 
-    <title>Lake Braddock Ultimate</title>
+    <title>ThinkingAbout</title>
+
+    <script src="http://https://env-132697.customer.cloud.microstrategy.com/MicroStrategyLibrary/javascript/embeddinglib.js"></script>
+
   </head>
-  <body>
+  <body onload="load()">
 
     <!-- Top of page background image and social media -->
     <div class="homepage">
@@ -23,10 +24,37 @@
       <!-- Top bar with navigation buttons -->
       <div id="navbar">
         <a class="active" href="index.html#top">Home</a>
-        <a href="photos.html">Photos</a>
         <a href="#contact">Contact</a>
         <a href="#about" style="float: right;">About</a>
       </div>
+
+      <div  id="mapDossier"></div>
+
+      <script type="text/javascript">
+
+      var mapDossier;
+
+      function load() {
+
+        var container = document.getElementById("mapDossier"),
+
+          url = "https://env-132697.customer.cloud.microstrategy.com/MicroStrategyLibrary/app/B7CA92F04B9FAE8D941C3E9B7E0CD754/F44E13C04634D072A7F37FA5F6302BAA/K53--K46";
+
+        microstrategy.dossier.create({
+
+          url: url,
+
+          enableResponsive: true,
+
+          placeholder: container,
+
+          containerHeight: '800px'
+
+        })
+
+      };
+
+    </script>
 
       <script>
         window.onscroll = function() {myFunction()};
@@ -42,18 +70,6 @@
           }
         }
       </script>
-
-      <img src="BearLogo.png" alt="LBU Logo" style="height:8vh; position:fixed; right:1vh; bottom:1vh;">
-
-      <a href="https://www.facebook.com/groups/2233126056933386/" target="_blank"><img src="facebook.png" class="fa"></a>
-      <a href="https://www.youtube.com/channel/UCeHp2AUnkyT5XzEdIbOZiTA" target="_blank"><img src="youtube.png" class="u"></a>
-      <a href="https://www.reddit.com/r/ultimate/" target="_blank"><img src="reddit.png" class="red"></a>
-      <a href="https://www.instagram.com/explore/tags/fairfaxultimate/?hl=en" target="_blank"><img src="instagram.png" class="insta"></a>
-      <a href="https://open.spotify.com/user/22m5bd2hem5ofrdrlcbihdzza/playlist/0rzY11JtlTL4k8omGIThXW?si=QqlNHjrBRyKbm-WkB4SdKA" target="_blank"><img src="spotify.png" class="spot"></a>
-
-      <div id="readMore">
-        <a href="#about"><img src="ReadMore.png" class="chevron"></a>
-      </div>
 
     </div>
 
